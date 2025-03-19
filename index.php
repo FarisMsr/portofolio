@@ -2,15 +2,15 @@
 if (isset($_REQUEST['action'])) {
     $action = $_REQUEST['action'];
 } else {
-    $action = "Acceuil";
+    $action = "accueil";
 }
 
 switch ($action) {
-    case "Acceuil":
+    case "accueil":
     $titre = "Accueil";
-    $css="Style/acceuil.css";
+    $css="Style/accueil.css";
     require_once "include/entete.php";
-    require_once "acceuil.php";
+    require_once "accueil.php";
     require_once "include/pied.php";
     break;
 

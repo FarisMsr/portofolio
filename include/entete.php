@@ -13,7 +13,7 @@
     <div class="logo">MANSOURI FARIS</div>
     <nav>
         <ul>
-            <li><a href="index.php?action=Acceuil">Accueil</a></li>
+            <li><a href="index.php?action=accueil">Accueil</a></li>
             <li><a href="index.php?action=Veille">Veille Technologique</a></li>
             <li><a href="index.php?action=Projets">Projets</a></li>
             <li><a href="index.php?action=Tutoriel">Tutoriel</a></li>
