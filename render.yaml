@@ -1,0 +1,9 @@
+ services:
+  -type: web
+ name: mansourifaris
+ runtime: docker
+ repo: https://github.com/FarisMsr/portofolio
+ region : frankfurt
+ plan : free
+ builCommand: ""
+ startCommand: "apache2-foreground"
