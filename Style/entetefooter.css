@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    background-color: #0a0a0a; /* Fond sombre */
+    color: #fff; /* Texte clair */
+    overflow-x: hidden;
+    font-size: 16px;
+}
+
+/* ===== HEADER ===== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.8);
+    border-bottom: 2px solid #2C2F37; /* Gris métallique */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+header .logo {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #A3B1C6; /* Gris clair froid */
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 10px rgba(163, 177, 198, 0.8); /* Légère lueur claire */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #A3B1C6;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+ color: #8475f8;
+    text-shadow: 0 0 10px #2b00ff, 0 0 20px  #2b00ff, 0 0 30px #2b00ff;
+
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-top: 2px solid #2C2F37; /* Gris métallique */
+    position:relative;
+    bottom: -25;
+    width: 100%;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: rgba(163, 177, 198, 0.8); /* Gris clair froid */
+   
+    height: 120px;
+ 
+}
+
+footer a {
+    color: #A3B1C6;
+    text-decoration: none;
+    padding: 0 5px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #8475f8;
+    text-shadow: 0 0 10px #2b00ff, 0 0 20px  #2b00ff, 0 0 30px #2b00ff;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+}
+
+/* ===== VIDEO BACKGROUND ===== */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover; /* Permet à la vidéo de couvrir toute la zone sans déformation */
+    z-index: -1; /* Assure que la vidéo reste en arrière-plan */
+    
+}

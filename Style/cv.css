@@ -1,0 +1,114 @@
+/* ===== Global Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #0A0A0A; /* Noir plus profond pour un effet plus net */
+    color: #A3B1C6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ===== Mon CV ===== */
+.cv {
+    padding: 100px 5% 50px; /* Adapté pour petits et grands écrans */
+    text-align: center;
+    flex: 1;
+}
+
+.cv h2 {
+    font-size: 38px;
+    color: #A3B1C6;
+    margin-bottom: 25px;
+    text-shadow: 0 0 15px rgba(0, 47, 255, 0.6); /* Effet lumineux amélioré */
+    animation: glow 1.5s infinite alternate; /* Ajout d'une légère animation */
+}
+
+/* Animation de glow sur le titre */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px rgba(0, 47, 255, 0.4);
+    }
+    to {
+        text-shadow: 0 0 20px rgba(0, 47, 255, 0.8);
+    }
+}
+
+.cv img {
+    width: 75%;
+    max-width: 550px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0, 26, 255, 0.6);
+    margin-bottom: 30px;
+    filter: brightness(0.85);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.cv img:hover {
+    transform: scale(1.03);
+    filter: brightness(1);
+    box-shadow: 0 0 30px rgba(0, 26, 255, 0.8);
+}
+
+.cv p {
+    font-size: 18px;
+    color: #A3B1C6;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
+
+/* Bouton */
+.cv .btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background: linear-gradient(90deg, #1A202C, #2C2F37);
+    color: #DDE4F0; /* Meilleur contraste */
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 20px rgba(1, 22, 255, 0.3);
+    border: 1px solid rgba(12, 52, 255, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Effet lumineux au survol */
+.cv .btn:hover {
+    background: linear-gradient(90deg, #2C2F37, #1A202C);
+    transform: scale(1.07);
+    box-shadow: 0 0 30px rgba(12, 52, 255, 0.6);
+}
+
+/* Effet d’onde sur le bouton */
+.cv .btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(12, 52, 255, 0.2);
+    transition: width 0.5s ease, height 0.5s ease, opacity 0.5s ease;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.cv .btn:hover::after {
+    width: 0;
+    height: 0;
+    opacity: 0.5;
+}
+
+/* Accessibilité : focus amélioré */
+.cv .btn:focus {
+    outline: none;
+    box-shadow: 0 0 20px rgba(57, 140, 250, 0.7);
+}

@@ -1,0 +1,152 @@
+/* Conteneur général */
+.project-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding-top: 80px;
+    color: #ddd;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+/* Conteneur des cartes */
+.project-card-container {
+    width: 85%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Style des cartes */
+.project-card {
+    background: linear-gradient(135deg, rgba(15, 15, 15, 0.15), rgba(0, 0, 0, 0.9));
+    border: 2px solid #2b00ff;
+    color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 20px #0130e9;
+    gap: 20px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+}
+
+/* Partie texte */
+.card-text {
+    flex: 1;
+    text-align: left;
+    padding-right: 20px;
+}
+
+.card-text h2 {
+    font-size: 2em;
+    color: #feffff;
+    margin-bottom: 15px;
+}
+
+.card-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Mise en valeur */
+.highlight {
+    color: #2b00ff;
+    font-weight: bold;
+}
+
+/* Image */
+.card-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #2b00ff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Indicateurs de progression */
+.progress-dots {
+    display: flex;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.dot {
+    width: 14px;
+    height: 14px;
+    background: #444;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.dot:hover {
+    transform: scale(1.2);
+}
+
+.dot.active {
+    background: #2b00ff;
+    box-shadow: 0 0 10px #0130e9;
+}
+
+/* Technologies utilisées */
+.tech-used {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #2b00ff;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.tech-used h2 {
+    color: #2b00ff;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.tech-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tech-item:hover {
+    transform: scale(1.1);
+}
+
+.tech-logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 8px;
+}
+
+.tech-item span {
+    color: #ddd;
+    font-size: 1em;
+}

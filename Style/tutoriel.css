@@ -1,0 +1,64 @@
+/* ===== Global Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #111111; /* Fond sombre */
+    color: #A3B1C6; /* Texte gris clair */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* La page prend au minimum la hauteur de l'écran */
+}
+
+/* ===== Mes Tutoriels ===== */
+.tutorials {
+    padding: 100px 20px 50px; /* Padding pour ne pas que le contenu touche l'header */
+    text-align: center;
+    flex: 1; /* Cette règle permet à la section de prendre l'espace restant */
+}
+
+.tutorials h2 {
+    font-size: 36px;
+    color: #A3B1C6;
+    margin-bottom: 30px;
+    text-shadow: 0 0 15px rgb(57 140 250 / 47%); /* Ombre bleue */
+}
+
+.tutorials p {
+    font-size: 18px;
+    color: #A3B1C6;
+    margin-bottom: 40px;
+}
+
+.tutorials ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tutorials li {
+    margin: 15px 0;
+}
+
+.tutorials a {
+    text-decoration: none;
+    color: rgb(57 140 250 / 47%);
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.tutorials a:hover {
+    color: #A3B1C6;
+    transform: translateX(5px); /* Légère translation pour effet interactif */
+}
+
+/* ===== Animations et Effets ===== */
+.tutorials a:focus,
+.tutorials a:hover {
+    text-shadow: 0 0 15px rgb(57 140 250 / 47%); /* Ajout d'une ombre bleue lors du hover/focus */
+}

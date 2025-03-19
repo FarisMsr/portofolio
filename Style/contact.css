@@ -1,0 +1,98 @@
+
+/* ===== Global Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #111111; /* Fond sombre */
+    color: #A3B1C6; /* Texte gris clair */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* La page prend au minimum la hauteur de l'écran */
+}
+
+/* ===== Me Contacter ===== */
+.contact {
+    padding: 100px 20px 50px;
+    text-align: center;
+    flex: 1; /* Cette règle permet à la section de prendre l'espace restant */
+}
+
+.contact h2 {
+    font-size: 36px;
+    color: #A3B1C6;
+    margin-bottom: 30px;
+    text-shadow: 0 0 15px rgb(57 140 250 / 47%); /* Ombre bleue */
+}
+
+.contact p {
+    font-size: 18px;
+    color: #A3B1C6;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.form-group {
+    width: 100%;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 18px;
+    color: #A3B1C6;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #2C2F37;
+    color: #A3B1C6;
+    border: 2px solid #2C2F37;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: rgb(57 140 250 / 47%); /* Bordure bleue au focus */
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.contact .btn {
+    padding: 15px 30px;
+    background-color: #2C2F37;
+    color: #A3B1C6;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact .btn:hover {
+    background-color: #1A202C;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+}
+
+.contact .btn:focus {
+    outline: none;
+    box-shadow: 0 0 15px rgb(57 140 250 / 47%);
+}
