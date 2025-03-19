@@ -29,7 +29,7 @@
                 
             </div>
             <div class="project">
-                <img src="img/gcr1.png" alt="Projet 2">
+                <img src="img/gcr1.PNG" alt="Projet 2">
                 <div class="overlay">
                     <h3>GSB</h3>
                     <p>Un projet mené en cours qui permet de gérer la gestion des comptes rendus des visites</p>
