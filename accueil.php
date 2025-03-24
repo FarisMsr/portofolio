@@ -152,7 +152,7 @@
             <section class="synthesis-table" id="competences">
                 <h2>Tableau de Synthèse des Réalisations Professionnelles</h2>
 
-                <a href="fichier/8-1 - BTS SIO - 2025 - Annexe 8-1 - Epreuve E5 - Tableau de synthe_se(1).pdf" class="btn3">Version PDF</a>
+                <a href="fichier/TABLEAU DE SYNTHESE .pdf" class="btn3">Version PDF</a>
 
             </section>
 
